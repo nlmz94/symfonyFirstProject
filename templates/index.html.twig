@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Acceuil {% endblock %}
+
+{% block body %}
+
+    <main role="main" class="container">
+        <div>
+            {% if article.published %}
+                {{ article.title }}
+                <br>
+                {{ article.description }}
+                <br>
+                {{ article.image }}
+            {% endif %}
+
+        </div>
+    </main>
+
+{% endblock %}
